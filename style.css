@@ -170,18 +170,26 @@ main {
   display: none;
 }
 
-.win {
-  /*display: none;*/
+.end {
   position: absolute;
   left: 50%;
-  top: 30%;
   transform: translateX(-50%);
-  color: #c7365f;
-  font-family: inherit;
-  font-size: 4rem;
-  text-transform: uppercase;
+  color: #444;
+  font-size: 3rem;
+  background-color: #fff;
   font-weight: 400;
-  padding: 0.7rem 2.5rem;
+  transition: all 0.2s;
+  padding: 1rem 2.5rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  top: 17rem;
+}
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 40%;
+  }
+  .player {
+    max-width: 50%;
+  }
 }
