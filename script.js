@@ -35,7 +35,7 @@ const init = function () {
   player0El.classList.add('player--active');
   player1El.classList.remove('player--winner');
   player1El.classList.remove('player--active');
-  document.querySelector('.end').classList.remove('win');
+  document.querySelector('.end').classList.add('hidden');
 };
 
 init();
@@ -89,7 +89,7 @@ btnHold.addEventListener('click', function () {
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.remove('player--active');
-      document.querySelector('.end').classList.add('win');
+      document.querySelector('.end').classList.remove('hidden');
     }
     //switch player
     switchPlayer();
