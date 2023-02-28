@@ -97,3 +97,18 @@ btnHold.addEventListener('click', function () {
 });
 //reset game
 btnNew.addEventListener('click', init);
+//chinh layout tren man hinh dien thoai
+
+function checkScreenSize() {
+  let screenWidth = window.innerWidth;
+  if (screenWidth < 576) {
+    document.querySelector('main').classList.add('hidden');
+    document.querySelector('.mobile').classList.remove('hidden');
+  } else {
+    document.querySelector('main').classList.remove('hidden');
+    document.querySelector('.mobile').classList.add('hidden');
+  }
+}
+checkScreenSize();
+window.addEventListener('resize', checkScreenSize);
+
