@@ -102,8 +102,8 @@ btnNew.addEventListener('click', init);
 function checkScreenSize() {
   let screenWidth = window.innerWidth;
   if (screenWidth < 575.98) {
-    document.querySelector('main').classList.toggle('hidden');
-    document.querySelector('.mobile').classList.toggle('hidden');
+    document.querySelector('main').classList.add('hidden');
+    document.querySelector('.mobile').classList.remove('hidden');
   } else {
     document.querySelector('main').classList.remove('hidden');
     document.querySelector('.mobile').classList.add('hidden');
