@@ -185,6 +185,15 @@ main {
   top: 17rem;
 }
 
+.text {
+  font-size: 2.7rem;
+}
+
+.image {
+  display: block;
+  margin: auto;
+}
+
 @media (max-width: 575.98px) {
  html {
     font-size: 40%;
